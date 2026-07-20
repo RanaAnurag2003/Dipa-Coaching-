@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  color: #2C2C2C;
+  background-color: #FFF9FC;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: 'Playfair Display', serif;
+}
+
+.about-card-bg {
+  background-color: #FFF2F8;
+  background-image: linear-gradient(to bottom, #FFF2F8 50%, rgba(255, 242, 248, 0.3) 90%, rgba(255, 242, 248, 0.8) 100%), var(--about-bg-url);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+  .about-card-bg {
+    background-image: linear-gradient(to right, #FFF2F8 40%, transparent 70%), var(--about-bg-url);
+    background-position: right -80px center;
+  }
+}
