@@ -1,11 +1,11 @@
-import { Facebook, Instagram, Youtube, Linkedin, Globe } from 'lucide-react'
+import { Facebook, Instagram, Youtube, Mail } from 'lucide-react'
 import Reveal from './Reveal'
+import logoImg from '../assets/Dipa Logo website BG.png'
 
 const socials = [
-  { Icon: Facebook, href: '#', label: 'Facebook' },
-  { Icon: Instagram, href: '#', label: 'Instagram' },
-  { Icon: Youtube, href: '#', label: 'YouTube' },
-  { Icon: Linkedin, href: '#', label: 'LinkedIn' },
+  { Icon: Facebook, href: 'https://www.facebook.com/share/1EKTHsaJqi/', label: 'Facebook' },
+  { Icon: Instagram, href: 'https://www.instagram.com/dipa.relationshipcoach?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==', label: 'Instagram' },
+  { Icon: Youtube, href: 'https://www.youtube.com/@healingwithdipa', label: 'YouTube' },
 ]
 
 export default function Footer() {
@@ -15,18 +15,11 @@ export default function Footer() {
 
         {/* Left Column: Logo + Name Info */}
         <Reveal direction="left">
-          <div className="flex items-center gap-4">
-            {/* Gold circular badge with double right chevron >> */}
-            <div className="w-16 h-16 rounded-full bg-[#E2A83E] flex items-center justify-center shrink-0 shadow-sm">
-              <svg width="35" height="35" viewBox="0 0 24 24" fill="none" className="text-[#C72D8E]">
-                <path d="M6 17L13 12L6 7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M13 17L20 12L13 7" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
-            <div>
-              <p className="font-display font-bold text-[#2C2C2C] text-xl leading-tight">
-                Dipa M Kapur
-              </p>
+          <div className="flex flex-col items-center sm:items-start gap-0">
+            {/* Logo Image */}
+            <img src={logoImg} alt="Dipa M Kapur" className="h-20 sm:h-16 md:h-20 w-auto object-contain shrink-0" />
+
+            <div className="hidden sm:block text-center sm:text-left -mt-1 sm:-mt-2">
               <p className="text-[#2C2C2C] text-xs md:text-base font-medium leading-tight mt-0.5">
                 Women Relationship Energy Coach
               </p>
@@ -64,17 +57,17 @@ export default function Footer() {
         {/* Vertical Divider 2 */}
         <div className="hidden md:block h-12 w-[1.5px] bg-[#D8B9CC]" />
 
-        {/* Right Column: Website URL */}
+        {/* Right Column: Email */}
         <Reveal direction="right">
           <div className="flex items-center gap-2">
-            <Globe className="w-8 h-8 text-[#E2A83E]" strokeWidth={1.8} />
+            <Mail className="w-8 h-8 text-[#E2A83E]" strokeWidth={1.8} />
             <a
-              href="https://www.dipamkapur.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=Lifecoachdipa@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#2C2C2C] hover:text-[#E63EA8] font-semibold text-lg hover:underline transition-colors"
+              className="text-[#2C2C2C] hover:text-[#E63EA8] font-medium text-lg tracking-wide hover:underline transition-colors"
             >
-              www.dipamkapur.com
+              Lifecoachdipa@gmail.com
             </a>
           </div>
         </Reveal>

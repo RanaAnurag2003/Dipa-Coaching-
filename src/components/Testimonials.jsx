@@ -1,8 +1,8 @@
 import { useState } from 'react'
 import { ChevronLeft, ChevronRight, Star } from 'lucide-react'
-import avatarNeha from '../assets/avatar-neha.jpg'
-import avatarPriya from '../assets/avatar-priya.jpg'
-import avatarShalini from '../assets/avatar-shalini.jpg'
+import avatarNeha from '../assets/profile_neha.png'
+import avatarPriya from '../assets/profile_priya.png'
+import avatarShalini from '../assets/profile_shalini.png'
 import Reveal from './Reveal'
 
 const testimonials = [

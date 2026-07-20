@@ -1,4 +1,5 @@
 import Header from './components/Header'
+import Banner from './components/Banner'
 import About from './components/About'
 import Message from './components/Message'
 import HowIHelp from './components/HowIHelp'
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <main className="pb-14">
         <About />
+        <Banner />
         <Message />
         <HowIHelp />
         <Testimonials />

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Reveal from './Reveal'
+import logoImg from '../assets/Dipa Logo website BG.png'
 
 // A properly-proportioned, symmetric heart outline (rounded lobes + a true
 // center notch + a pointed base) with an elegant flourish tail trailing off
@@ -93,23 +94,15 @@ function AnimatedHeart() {
 export default function Header() {
   return (
     <header className="w-full bg-[#FFF9FC]">
-      <div className="w-[90%] max-w-[1200px] mx-auto py-6 flex flex-col sm:flex-row items-center justify-between gap-6">
+      <div className="w-[90%] max-w-[1200px] mx-auto pt-8 sm:pt-2 pb-6 md:pt-3 md:pb-6 flex flex-col sm:flex-row items-center sm:items-end justify-between gap-6">
 
         {/* Left Side: Logo + Name Info */}
         <Reveal direction="left" duration={700}>
-          <div className="flex items-center gap-4">
-            {/* Logo container */}
-            <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-[#E63EA8] via-[#C72D8E] to-[#B0217C] flex items-center justify-center shrink-0 shadow-md transform hover:scale-105 transition-transform duration-200">
-              <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
-                <path d="M5 4 L13 12 L5 20" stroke="#F6E7A8" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12 4 L20 12 L12 20" stroke="#F6E7A8" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </div>
+          <div className="flex flex-col items-center sm:items-start gap-0">
+            {/* Logo Image */}
+            <img src={logoImg} alt="Dipa M Kapur" className="h-20 sm:h-16 md:h-20 w-auto object-contain shrink-0" />
 
-            <div>
-              <h1 className="font-display text-2xl md:text-3xl font-extrabold text-brand-pinkDeep tracking-tight">
-                Dipa M Kapur
-              </h1>
+            <div className="hidden sm:block text-center sm:text-left -mt-1 sm:-mt-2">
               <p className="text-sm md:text-[15px] font-semibold text-brand-text leading-snug">
                 Women Relationship Energy Coach
               </p>

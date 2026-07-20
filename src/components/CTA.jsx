@@ -97,31 +97,31 @@ export default function CTA() {
               <form onSubmit={handleSubmit} className="grid grid-cols-1 lg:grid-cols-[1.15fr_1fr_0.8fr] gap-6 lg:gap-8 items-center">
 
                 {/* Left Column: Price, Title & Details */}
-                <div className="flex gap-4 sm:gap-5 items-start">
+                <div className="flex flex-col sm:flex-row gap-4 sm:gap-5 items-center sm:items-start text-center sm:text-left">
                   {/* Gold circle badge with calendar icon */}
-                  <div className="w-24 h-24 rounded-full bg-[#E8C170] flex items-center justify-center shrink-0 shadow-sm">
-                    <CalendarDays className="w-14 h-14 text-[#C72D8E]" strokeWidth={2.2} />
+                  <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-[#E8C170] flex items-center justify-center shrink-0 shadow-sm">
+                    <CalendarDays className="w-10 h-10 sm:w-14 sm:h-14 text-[#C72D8E]" strokeWidth={2.2} />
                   </div>
-                  <div className="flex-1">
-                    <p className="text-white font-sans font-bold text-[15px] leading-snug">
+                  <div className="flex-1 w-full flex flex-col items-center sm:items-start">
+                    <p className="text-white font-sans font-bold text-[14px] sm:text-[15px] leading-snug">
                       Start Your Transformation Today!
                     </p>
-                    <p className="text-[#F6E7A8] text-[15px] font-sans font-bold mt-1">
+                    <p className="text-[#F6E7A8] text-[14px] sm:text-[15px] font-sans font-bold mt-1">
                       Join My 45-Minute Introductory Webinar
                     </p>
-                    <h3 className="text-white font-sans font-bold text-[24px] mt-1.5 leading-tight">
+                    <h3 className="text-white font-sans font-bold text-[20px] sm:text-[24px] mt-1.5 leading-tight">
                       Transform Your Relationships
                     </h3>
 
                     {/* Pricing Info */}
-                    <div className="flex items-end gap-3 mt-3 select-none">
-                      <span className="text-white/70 line-through text-[20px] font-sans font-normal mb-1">
+                    <div className="flex items-end justify-center sm:justify-start gap-2 sm:gap-3 mt-3 select-none">
+                      <span className="text-white/70 line-through text-[18px] sm:text-[20px] font-sans font-normal mb-1">
                         ₹499/-
                       </span>
-                      <span className="text-white font-sans font-bold text-[38px] leading-none">
+                      <span className="text-white font-sans font-bold text-[32px] sm:text-[38px] leading-none">
                         ₹49/-
                       </span>
-                      <span className="text-white text-[14px] font-sans font-normal mb-1">
+                      <span className="text-white text-[12px] sm:text-[14px] font-sans font-normal mb-1">
                         Only
                       </span>
                     </div>
@@ -192,9 +192,9 @@ export default function CTA() {
                   </div>
 
                   {/* Security Message Centered Below Inputs */}
-                  <div className="flex items-center justify-center gap-1.5 mt-1 text-white/80 select-none">
-                    <Lock className="w-3.5 h-3.5 text-white shrink-0" strokeWidth={1.5} />
-                    <p className="text-[12px] font-sans font-normal text-white leading-normal">
+                  <div className="flex items-start sm:items-center justify-center gap-1.5 mt-2 sm:mt-1 text-white/80 select-none px-2 text-left sm:text-center">
+                    <Lock className="w-4 h-4 text-white shrink-0 mt-0.5 sm:mt-0" strokeWidth={1.5} />
+                    <p className="text-[13px] sm:text-[14px] font-sans font-normal text-white leading-snug sm:leading-normal lg:whitespace-nowrap">
                       Your information is 100% secure and will never be shared.
                     </p>
                   </div>
@@ -204,14 +204,14 @@ export default function CTA() {
                 {/* Right Column: Gold CTA Card Button */}
                 <button
                   type="submit"
-                  className="bg-[#E8C170] hover:bg-[#F2C852] text-[#3A0A21] font-sans rounded-[18px] p-5 w-full text-center flex flex-col items-center justify-center leading-snug cursor-pointer transition-all duration-300 shadow-[0_8px_25px_rgba(226,168,62,0.2)] hover:scale-[1.02] select-none outline-none border-0 h-full min-h-[140px] lg:min-h-[155px]"
+                  className="bg-[#E8C170] hover:bg-[#F2C852] text-[#3A0A21] font-sans rounded-[18px] p-3 sm:p-4 w-full text-center flex flex-col items-center justify-center leading-snug cursor-pointer transition-all duration-300 shadow-[0_8px_25px_rgba(226,168,62,0.2)] hover:scale-[1.02] select-none outline-none border-0 h-full min-h-[105px] sm:min-h-[125px] lg:min-h-[135px]"
                 >
-                  <span className="text-[37px] font-sans font-bold uppercase tracking-wide">YES!</span>
-                  <span className="text-[25px] font-sans font-bold mt-1.5 uppercase tracking-wide">I WANT TO JOIN</span>
-                  <span className="text-[25px] font-sans font-bold uppercase tracking-wide">FOR ₹49/-</span>
+                  <span className="text-[28px] sm:text-[32px] md:text-[37px] font-sans font-bold uppercase tracking-wide">YES!</span>
+                  <span className="text-[18px] sm:text-[22px] md:text-[25px] font-sans font-bold mt-1 sm:mt-1.5 uppercase tracking-wide">I WANT TO JOIN</span>
+                  <span className="text-[18px] sm:text-[22px] md:text-[25px] font-sans font-bold uppercase tracking-wide">FOR ₹49/-</span>
 
                   {/* Horizontal Arrow SVG */}
-                  <svg className="w-9 h-9 mt-3 stroke-[#3A0A21]" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <svg className="w-7 h-7 sm:w-9 sm:h-9 mt-2 sm:mt-3 stroke-[#3A0A21]" viewBox="0 0 24 24" fill="none" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="4" y1="12" x2="20" y2="12" />
                     <polyline points="14 6 20 12 14 18" />
                   </svg>
